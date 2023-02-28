@@ -1,0 +1,65 @@
+<main class="page-main">
+
+  <header class="page-header">
+    <div class="top-bar">
+      <a [routerLink]="['/']">
+        <img src={{h_path_logo_top[0]}} alt={{h_path_logo_top[1]}}>
+      </a>
+    </div>
+
+    <div class="h-logo">
+      <a [routerLink]="['/']">
+        <img src={{h_path_logo[0]}} alt={{h_path_logo[1]}}>
+      </a>
+    </div>
+    <div class="h-description">
+      <span>{{h_description}}</span>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article>
+      <header>
+      </header>
+      <section class="">
+        <header class="">
+        </header>
+        <div class="info">
+          <div *ngFor="let h_app_txt of h_app_txts; let i = index">{{h_app_txt}}</div>
+        </div>
+
+
+
+        <div class="under-construction">
+          <div class="animate__animated animate__bounce">
+            <svg class="warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M480 288c0-80.25-49.28-148.92-119.19-177.62L320 192V80a16 16 0 0 0-16-16h-96a16 16 0 0 0-16 16v112l-40.81-81.62C81.28 139.08 32 207.75 32 288v64h448zm16 96H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h480a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+              </path>
+            </svg>
+          </div>
+          <h1 class="animated fadeIn">Nós estamos trabalhando nisso!</h1>
+          <div class="description-text animated fadeIn delay-1s">
+            <p>Este site está atualmente em construção.</p>
+            <p>Por favor, volte em breve.</p>
+          </div>
+        </div>
+
+
+      </section>
+      <footer></footer>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer-line-1">
+      <div>{{page_footer_txts[0]}}</div>
+      <div> | </div>
+      <div>
+        <address><a href={{page_footer_txts[2]}}>{{contact_support}}</a></address>
+      </div>
+    </div>
+    <div class="page-footer-line-2"><a [routerLink]="['/']">{{page_footer_txts[1]}}</a></div>
+  </footer>
+
+</main>

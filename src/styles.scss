@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* start ngx-owl-carousel-o */
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+/* end ngx-owl-carousel-o */
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  src: url("./assets/fonts/Nunito/Nunito-ExtraLight.ttf");
+  font-family: "Nunito";
+  font-weight: 200;
+}
+
+@font-face {
+  src: url("./assets/fonts/Nunito/Nunito-Regular.ttf");
+  font-family: "Nunito";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("./assets/fonts/Nunito/Nunito-SemiBold.ttf");
+  font-family: "Nunito";
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("./assets/fonts/Nunito/Nunito-Black.ttf");
+  font-family: "Nunito";
+  font-weight: 900;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+a,
+button,
+address {
+  all: unset;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+.hostemulation {
+  // iframe to check if URL is host emulation (tmpl.) and redirect in index.html
+  position: absolute;
+  width: 90vw;
+  height: 160px;
+  top: -300px;
+}
