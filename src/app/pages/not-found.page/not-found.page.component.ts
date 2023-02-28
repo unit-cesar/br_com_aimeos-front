@@ -13,7 +13,7 @@ export class NotFoundPageComponent {
   ) { }
 
   goToUrl(): void {
-    this.document.location.href = 'https://aimeosbrasil.com.br/';
+    this.document.location.href = 'https://aimeos.com.br/';
   }
 
 }
