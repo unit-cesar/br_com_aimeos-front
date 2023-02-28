@@ -1,6 +1,12 @@
 # Aimeos Brasil
 
-## Comunidade não oficial sobre o Aimeos
+### Comunidade brasileira do Aimeos
+
+> Comunidade extraoficial
+
+> Projetos Open Source voltado para e-commerces e marketplaces no Brasil
+
+## Landing page
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 

@@ -1,0 +1,303 @@
+/* mobile-first 360x[640, 740] - acessos: 16% */
+
+@use "../../sass-global/global.scss" as *;
+
+.h-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .h-app-title {
+    background-color: $color-3;
+    white-space: nowrap;
+    border-radius: 3rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: $color-1;
+    box-shadow: 0 0.2rem 0.4rem 0 $color-4;
+    margin-bottom: 2rem;
+    position: relative;
+    top: -2rem;
+  }
+
+  .h-app-txts {
+    display: flex;
+    flex-direction: column;
+    color: $color-2;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+
+    span {
+      text-shadow: -0.1rem 0.1rem 0 $color-4;
+    }
+  }
+  .h-app-playstore {
+    img {
+      zoom: 0.7;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.s-tmpl {
+  .s-tmpl-sub-title {
+    text-align: center;
+  }
+
+  .s-tmpl-tmpls {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-self: center;
+
+    .s-tmpl-tmpls-list {
+      margin-right: 3rem;
+
+      ul {
+        list-style-type: none;
+        margin: 2rem 0;
+        padding: 0;
+        text-align: start;
+        font-weight: 200;
+      }
+
+      .s-tmpl-txt {
+        font-weight: 600;
+        margin: -1.5rem 0 0 0;
+        text-align: right;
+      }
+    }
+
+    .s-tmpl-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      zoom: 0.6;
+
+      .s-tmpl-img1 {
+        img {
+          zoom: 0.5;
+        }
+      }
+      .s-tmpl-carousel {
+        .c-app-carousel-tmpls {
+          // para o zoom funcionar no iOS as medidas de imagens devem ser em PX
+          width: 100px;
+          // width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+.s-hands {
+  .s-hands-txt {
+    white-space: pre;
+  }
+  img {
+    margin-top: 2rem;
+    width: 120px;
+  }
+}
+
+.s-ctrl {
+  .s-ctrl-img1 {
+    img {
+      display: none;
+    }
+  }
+  .s-ctrl-txts {
+    font-weight: 200;
+    div {
+      white-space: pre-line;
+      margin: 1rem 0;
+    }
+  }
+  .s-ctrl-caroucel {
+    position: relative;
+    top: 1.6rem;
+    display: flex;
+    justify-content: center;
+
+    .c-app-carousel-news {
+      // para o zoom funcionar no iOS as medidas de imagens devem ser em PX
+      width: 100px;
+      // width: 10rem;
+    }
+  }
+}
+
+.s-invest {
+  .s-invest-img1 {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    img {
+      // width: 10rem;
+      zoom: 0.6;
+    }
+  }
+}
+
+.s-contact {
+  .s-contact-address {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+    .s-contact-address-whatsapp {
+      img {
+        // zoom: 0.5;
+        width: 107px;
+        margin-top: 1.5rem;
+      }
+    }
+    .s-contact-address-telegram {
+      img {
+        // zoom: 0.5;
+        width: 105px;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+@media print {
+}
+
+@media screen and (min-width: 280px) {
+  /* 280x653 */
+}
+
+@media screen and (min-width: 360px) {
+  /* mobile-first 360x[640, 740] - acessos: 16% */
+}
+
+@media screen and (min-width: 412px) {
+  /* 412x[732, 869, 824, 846, 847, 869] */
+}
+
+@media screen and (min-width: 640px) {
+  /* 640x360 - acessos: 16% */
+
+  .h-app {
+    .h-app-txts {
+      font-size: 2.1rem;
+    }
+
+    .h-app-playstore {
+      img {
+        // para o zoom funcionar no iOS as medidas de imagens devem ser em PX
+        width: 202px;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .s-tmpl > .s-tmpl-tmpls {
+    .s-tmpl-tmpls-list {
+      margin-right: 5rem;
+    }
+    .s-tmpl-img {
+      zoom: 1;
+    }
+  }
+
+  .s-contact {
+    .s-contact-address {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media screen and (min-width: 740px) {
+  /* 740x360 - acessos: 16% */
+}
+
+@media screen and (min-width: 768px) {
+  /* 768x1024 - acessos: 4% */
+}
+
+@media screen and (min-width: 1024px) {
+  /* 1024x768 - acessos: 4% */
+}
+
+@media screen and (min-width: 1280px) {
+  /* 1280x[1024, 720, 900, 800, 850] */
+}
+
+@media screen and (min-width: 1366px) {
+  /* desktop-first 1366x768 - acessos: 25% */
+
+  .h-app {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+
+    .h-app-title {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      position: unset;
+    }
+
+    .h-app-txts {
+      font-size: 2.1rem;
+      width: 47.6rem;
+    }
+
+    .h-app-playstore {
+      img {
+        zoom: 1;
+      }
+    }
+  }
+
+  .s-tmpl {
+    margin-top: 0;
+  }
+
+  .s-ctrl {
+    margin-top: 0;
+
+    .s-ctrl-list {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      align-self: center;
+
+      .s-ctrl-txts {
+        text-align: left;
+        margin-right: 5rem;
+      }
+      .s-ctrl-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .s-ctrl-img1 {
+          zoom: 0.6;
+          img {
+            display: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .s-contact {
+    .s-contact-address {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* desktop 1920x1080 - acessos: 6% */
+}
